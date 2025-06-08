@@ -6,15 +6,15 @@ This project is a complete RESTful API for a fictional bookstore. It is built in
 ## Functionality
 The API supports full CRUD operations for managing:
 
- 🧑‍💼 Authors
+-  Authors
 
-📘 Books
+-  Books
 
-👤 Customers
+-  Customers
 
-🛒 Shopping Carts
+-  Shopping Carts
 
-📦 Orders
+-  Orders
 
 ## Features
 RESTful architecture using javax.ws.rs and Jersey
