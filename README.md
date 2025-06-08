@@ -5,63 +5,72 @@ Module: Client-Server Architectures (5COSC022W)
 University of Westminster
 
 Overview
-This project is a complete RESTful API for a fictional bookstore, built entirely in Java using JAX-RS (Jersey) and the Grizzly HTTP server, with JSON used for all data exchange. The entire system runs in-memory, using Java’s HashMap and ArrayList, with no databases or external frameworks (as per the coursework requirements).
+This project is a complete RESTful API for a fictional bookstore. It is built in Java using JAX-RS (Jersey) and the Grizzly HTTP server. All data is exchanged using JSON, and the entire system is in-memory only, utilizing HashMap and ArrayList — no external databases or frameworks, per coursework requirements.
 
-The API allows users to manage:
+Functionality
+The API supports full CRUD operations for managing:
 
-Authors
+ 🧑‍💼 Authors
 
-Books
+📘 Books
 
-Customers
+👤 Customers
 
-Shopping Carts
+🛒 Shopping Carts
 
-Orders
+📦 Orders
 
-It includes robust input validation and fully customized exception handling. All endpoints were tested using Postman with both valid and invalid data.
+  Features
+RESTful architecture using javax.ws.rs and Jersey
 
-Project Structure
+In-memory data storage with auto-incrementing IDs
+
+Custom exceptions (AuthorNotFoundException, BookNotFoundException, etc.)
+
+Centralized exception handling using ExceptionMapper
+
+Robust input validation with user-friendly JSON error messages
+
+Thorough inline comments (first-person perspective)
+
+Postman-tested endpoints with both valid and invalid input scenarios
+
+📁 Project Structure
 File/Folder	Description
-HamzaHassan_BookStoreAPI_W2044381.zip	Contains the full Java source code of the API (model, resource, exception, main, etc.), with in-depth comments written in first-person to explain logic clearly. It includes custom exception mapping and unique field names for better personalization.
-Bookstore_API_Test_Report_HamzaHassanW2044381.docx	A comprehensive report of all test cases run using Postman. This includes both successful and failing scenarios for all CRUD operations, with screenshots, example JSON requests, and expected vs. actual responses.
+HamzaHassan_BookStoreAPI_W2044381.zip	Full source code, organized into model, resource, exception, and main packages. Includes in-depth first-person comments.
+Bookstore_API_Test_Report_HamzaHassanW2044381.docx	A full test report covering all CRUD endpoints with valid and invalid data, screenshots, and JSON examples.
 
-Features
-Fully functional RESTful API using javax.ws.rs and Jersey
+ How to Run
+Extract the .zip file and open the project in NetBeans or any Java IDE with Maven support.
 
-Custom exceptions like AuthorNotFoundException, BookNotFoundException, etc.
+Ensure Java 17+ and Maven are installed and configured.
 
-ExceptionMapper implementation to return clean JSON error responses
+Clean and Build the project using your IDE or mvn clean install.
 
-In-memory data storage with auto-generated IDs
+Run the Main.java class to start the Grizzly HTTP server.
 
-Detailed code comments and structured logic for easy readability
+Access endpoints using Postman at:
+http://localhost:8080/api/
 
-Manual testing via Postman covering all endpoints
+Testing Summary
+Detailed test results are provided in the .docx report:
 
-How to Run
-Open the .zip file in NetBeans or any IDE supporting Maven.
+Each API endpoint tested individually
 
-Ensure Java 17+ and Maven are properly configured.
+Valid and invalid scenarios
 
-Clean and Build the project.
+HTTP status codes compared (expected vs actual)
 
-Run the Main class to start the Grizzly server.
-
-Test endpoints using Postman at: http://localhost:8080/api/
+Custom exception messages demonstrated (e.g. “Book with ID 99 not found”)
 
 Demo Video
-You can watch my video walkthrough here (including tests and explanation):
-YouTube Demo: https://www.youtube.com/watch?v=RR-QPvmMjh8
+ Watch a full video walkthrough including code explanation and testing:
+YouTube Demo
 
-Testing Report
-The Bookstore_API_Test_Report_HamzaHassanW2044381.docx explains:
+Final Notes
+This API was built from scratch with clarity and modularity in mind.
 
-Each endpoint tested
+All logic was explained in comments using a first-person style for better understanding.
 
-Valid and invalid test scenarios
-
-Status codes expected and received
-
-Custom exception messages for clarity
+Testing was carried out thoroughly to ensure the API behaves predictably.
 
