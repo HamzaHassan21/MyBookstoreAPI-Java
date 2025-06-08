@@ -1,13 +1,9 @@
-BookstoreAPI – Client-Server Architectures Coursework
-Author: Hamza Hassan
-Student ID: W2044381
-Module: Client-Server Architectures (5COSC022W)
-University of Westminster
+# BookstoreAPI – Client-Server Architectures
 
-Overview
+## Overview
 This project is a complete RESTful API for a fictional bookstore. It is built in Java using JAX-RS (Jersey) and the Grizzly HTTP server. All data is exchanged using JSON, and the entire system is in-memory only, utilizing HashMap and ArrayList — no external databases or frameworks, per coursework requirements.
 
-Functionality
+## Functionality
 The API supports full CRUD operations for managing:
 
  🧑‍💼 Authors
@@ -20,7 +16,7 @@ The API supports full CRUD operations for managing:
 
 📦 Orders
 
-  Features
+## Features
 RESTful architecture using javax.ws.rs and Jersey
 
 In-memory data storage with auto-incrementing IDs
@@ -35,12 +31,12 @@ Thorough inline comments (first-person perspective)
 
 Postman-tested endpoints with both valid and invalid input scenarios
 
-📁 Project Structure
+## Project Structure
 File/Folder	Description
 HamzaHassan_BookStoreAPI_W2044381.zip	Full source code, organized into model, resource, exception, and main packages. Includes in-depth first-person comments.
 Bookstore_API_Test_Report_HamzaHassanW2044381.docx	A full test report covering all CRUD endpoints with valid and invalid data, screenshots, and JSON examples.
 
- How to Run
+## How to Run
 Extract the .zip file and open the project in NetBeans or any Java IDE with Maven support.
 
 Ensure Java 17+ and Maven are installed and configured.
@@ -52,7 +48,7 @@ Run the Main.java class to start the Grizzly HTTP server.
 Access endpoints using Postman at:
 http://localhost:8080/api/
 
-Testing Summary
+## Testing Summary
 Detailed test results are provided in the .docx report:
 
 Each API endpoint tested individually
@@ -63,11 +59,11 @@ HTTP status codes compared (expected vs actual)
 
 Custom exception messages demonstrated (e.g. “Book with ID 99 not found”)
 
-Demo Video
+## Demo Video
  Watch a full video walkthrough including code explanation and testing:
-YouTube Demo
+YouTube Demo - https://www.youtube.com/watch?v=RR-QPvmMjh8
 
-Final Notes
+## Final Notes
 This API was built from scratch with clarity and modularity in mind.
 
 All logic was explained in comments using a first-person style for better understanding.
